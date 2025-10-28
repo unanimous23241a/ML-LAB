@@ -8,7 +8,7 @@ new_data={
     'Price':[12,15,18]  
     }  
 df=DataFrame(new_data,columns=['Brand','Price'])  
-export=df.to_excel(r"C:\Users\Mohammed Ayaz\OneDrive\Desktop\filename.xlsx")
+export=df.to_excel(r"C:\Users\OneDrive\Desktop\filename.xlsx")
 
 
 ---
@@ -18,7 +18,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split  
 from sklearn.tree import DecisionTreeClassifier  
 from sklearn.metrics import confusion_matrix, accuracy_score  
-data=pd.read_csv(r"C:/Users/Mohammed Ayaz/OneDrive/Desktop/ML Tasks/cars.csv")  
+data=pd.read_csv(r"C:/Users/OneDrive/Desktop/ML Tasks/cars.csv")  
 print(data)  
 for col in data.columns:  
     data[col], _ = pd.factorize(data[col])  
