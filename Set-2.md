@@ -1,7 +1,7 @@
 # Q1.
 import pandas as pd  
 from sklearn.preprocessing import StandardScaler,Binarizer,MinMaxScaler  
-df=pd.read_excel(r"C:\Users\Mohammed Ayaz\Downloads\diabetes_sample.xlsx",names=['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi','age', 'class'])  
+df=pd.read_excel(r"C:\Users\Downloads\diabetes_sample.xlsx",names=['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi','age', 'class'])  
 array=df.values  
 x=array[:,:8]  
 y=array[:,8]  
@@ -24,7 +24,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split  
 from sklearn.naive_bayes import GaussianNB  
 from sklearn.metrics import accuracy_score  
-data=pd.read_csv(r"C:\Users\Mohammed Ayaz\OneDrive\Desktop\ML Tasks\PlayTennis.csv")  
+data=pd.read_csv(r"C:\Users\OneDrive\Desktop\ML Tasks\PlayTennis.csv")  
 print(data)  
 for col in data.columns:  
     data[col] = LabelEncoder().fit_transform(data[col])  
