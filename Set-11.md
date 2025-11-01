@@ -42,7 +42,7 @@ print(pima)
 feature_cols = ['pregnant', 'insulin', 'bmi', 'age','glucose','bp']
 X = pima[feature_cols] # Features
 y = pima.label # Target variable
-# Splitting between train data into training and validation dataset
+
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20) # initializing the boosting
 
