@@ -28,13 +28,15 @@ print(P)
 
 
 
-# Q2.  Bssoting ensemble methodimport pandas as pd
+# Q2.  Boosting ensemble method
+import pandas as pd
 import numpy as np
 
 from sklearn.metrics import mean_squared_error
 
 from sklearn.ensemble import GradientBoostingRegressor
-col_names = ['pregnant', 'glucose', 'bp', 'skin', 'insulin', 'bmi', 'pedigree', 'age', 'label'] # load dataset
+col_names = ['pregnant', 'glucose', 'bp', 'skin', 'insulin', 'bmi', 'pedigree', 'age', 'label']
+# load dataset
 
 pima = pd.read_csv("D:\soujanya\Machine Learning 22-23 I Sem\Machine Learning 2022-23 II sem\ML LAB\Datasets/diabetes.csv", header=None, names=col_names)
 
